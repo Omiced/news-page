@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* son 10px si el ftz es 16px base */
+}
+
+.news__header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+}
+h1 {
+  font-size: 6rem;
+}
+.news__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  gap: 0;
+}
+
+.news__section {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 0 1.5rem;
+}
+.news__section-Puppies {
+  grid-column: span 2;
+  border: 1px solid black;
+  border-top: 0;
+}
+.news__section-noBorderBot {
+  border-bottom: 0;
+}
+.news__section-links {
+  display: grid;
+  grid-column: 2/-1;
+  width: 100%;
+  grid-template-rows: repeat(5, 1fr);
+  border-left: 1px solid black;
+}
+.news__container-titles {
+  font-size: 3rem;
+  text-align: center;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.img {
+  width: 100%;
+  margin: 2rem;
+  padding: 0;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 1rem;
+  display: inline-block;
+}
+
+a {
+  align-items: center;
+  color: #666;
+  display: flex;
+  font-size: 3rem;
+  width: 100%;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.color1 {
+  background-color: #ffeaa7;
+}
+.color2 {
+  background-color: #81ecec;
+}
+.color3 {
+  background-color: #55efc4;
+}
+.color4 {
+  background-color: #74b9ff;
+}
+.color5 {
+  background-color: #a29bfe;
+}
